@@ -84,13 +84,12 @@ h5{
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+   }
 
 .containerL-1{
     min-width: 50px;
     min-height: 60px;
     margin-bottom: auto;
-
 }
 .containerL-2{
     min-width: 50px;
@@ -114,35 +113,38 @@ h5{
 .containerR-1{
     min-width: 50px;
     min-height: 100px;
+    margin-bottom: 20px;
 }
 .containerR-2{
     min-width: 50px;
     min-height: 100px;
+    margin-bottom: 20px;
 }
 .containerR-3{
     min-width: 50px;
     min-height: 100px;
+
 }
 .propic1{
     width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: auto;
-    padding-right: auto;
-
-}
+    margin: 5%;
+   }
 .propic2{
-    width: 45%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: auto;
-    padding-right: auto;
-
+    width: 39.5%;
+    margin: 5%;
 }
+
+
 footer{
     display: flex;
     justify-content: center;
 
+}
+.imgpara{
+    max-height: 20px;
+    max-width: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 footer h4{
