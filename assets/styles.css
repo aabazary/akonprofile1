@@ -30,8 +30,14 @@ nav li{
 a{
     color: white;
     text-decoration:none;
+    font-family: fantasy;
 }
+a:hover{
+    background-color: red;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
 
+}
 .banner{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -146,11 +152,14 @@ footer h4{
     .buttlinks{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-self: center;
+       
+     
     }
     .imgbutt{
-        max-width: 28%;
-        justify-content: space-between;
+        display: flex;
+        width: 90%;
+        margin: 10px;
     }
     
     .containerL{
