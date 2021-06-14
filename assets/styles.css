@@ -60,6 +60,9 @@ header figure{
     display: none;
 }
 
+h5{
+    display: none;
+}
 
 .gridcontainer{
     display: grid;
@@ -85,16 +88,19 @@ header figure{
 
 .containerL-1{
     min-width: 50px;
-    min-height: 100px;
+    min-height: 60px;
+    margin-bottom: auto;
 
 }
 .containerL-2{
     min-width: 50px;
-    min-height: 100px;
+    min-height: 60px;
+    margin-bottom: auto;
 }
 .containerL-3{
     min-width: 50px;
-    min-height: 100px;
+    min-height: 60px;
+    margin-bottom: auto;
 }
 .containerR{
     justify-content: right;
@@ -117,7 +123,22 @@ header figure{
     min-width: 50px;
     min-height: 100px;
 }
+.propic1{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
 
+}
+.propic2{
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
+
+}
 footer{
     display: flex;
     justify-content: center;
@@ -166,28 +187,37 @@ footer h4{
         display: none;
     }
     .containerR{
-        justify-self: center;
-        padding-left: 40px;
-        padding-right: 40px;        
+        justify-self: center;     
         background-color: rgb(24, 22, 22);
     }
     
+    h5{
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        font-size: 32px;
+        font-family: fantasy;
+    
+    }   
 
     .containerR-1{
-        padding-left: 40px;
-        padding-right: 40px; 
-        width: 100%;
+        margin:10px;
+        padding: 0px 10px 0px 10px;
+        width: 90%;
         min-height: 100px;
       
     }
     .containerR-2{
-        
-        width: 100%;
+        margin:10px;
+        padding: 0px 10px 0px 10px;
+        width: 90%;
         min-height: 100px;
     }
     .containerR-3{
-        
-        width: 100%;
+        margin:10px;
+        padding: 0px 10px 0px 10px;
+        width: 90%;
         min-height: 100px;
     }
 
