@@ -2,33 +2,51 @@
     box-sizing: content-box;
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 header{
     margin: 0px;
     padding: 0px;
-    background-color: orchid;
-
 }
 nav{
+   
     float: right;
     margin-top: -20px;
     margin-right: 20px;
 }
 nav ul{
+ 
     list-style-type: none;
 }
 
 nav li{
+ 
     margin-left: 25px ;
-    display: inline-block;   
+    display: inline-block;
+    font-size: 24px;   
 }
 
+a{
+    color: white;
+    text-decoration:none;
+}
+
+.banner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    max-height: 100px;
+    width: 100%;
+}
 
 header h2{
+    margin-top: 20px;
     width: fit-content;
-    color: red;
-    background-color: yellow;
+    color: white;
+    margin-left: 10px;
+    font-family: fantasy;
+    font-size: 36px;
 
 }
 
@@ -45,11 +63,18 @@ header figure{
 }
 .containerL{
     justify-content: left;
-    margin: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: end;
     flex: 1 1 ;
-    border: 5px solid black;
-    background-color: gray;
-
+    color: white;
+    border-right: 5px solid red;
+    background-color: rgb(24, 22, 22);
+    font-family: fantasy;
+    font-size: 48px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .containerL-1{
@@ -67,9 +92,12 @@ header figure{
 }
 .containerR{
     justify-content: right;
-    margin: 10px;
-    border:5px solid orange;
-    background-color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(24, 22, 22);
+    color: white;
 }
 .containerR-1{
     min-width: 50px;
@@ -86,13 +114,15 @@ header figure{
 
 footer{
     display: flex;
-    background-color: orchid;
+    justify-content: center;
 
 }
 
 footer h4{
-    color: brown;
-    background-color: green;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align:center;
 
 }
 @media screen and (max-width:768px){
@@ -102,8 +132,7 @@ footer h4{
     
     header figure{
     display: flex;
-    background-color: green;
-    color: brown;
+ 
     }
     
     .gridcontainer{
@@ -129,14 +158,15 @@ footer h4{
     }
     .containerR{
         justify-self: center;
-        
-        border:5px solid orange;
-        background-color: gray;
+        padding-left: 40px;
+        padding-right: 40px;        
+        background-color: rgb(24, 22, 22);
     }
     
 
     .containerR-1{
-       
+        padding-left: 40px;
+        padding-right: 40px; 
         width: 100%;
         min-height: 100px;
       
