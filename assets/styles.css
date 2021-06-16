@@ -4,6 +4,7 @@
     margin: 0;
     background-color: black;
 }
+
 /* Sets the scrolling behavior*/
 html{
     scroll-behavior: smooth;
@@ -15,71 +16,71 @@ nav{
     margin-top: -20px;
     margin-right: 20px;
 }
+
 /*removes styles for the ul*/
 nav ul{
     list-style-type: none;
 }
+
 /*positions the terms inside of the navigation bar*/
 nav li{
     margin-left: 25px ;
     display: inline-block;
     font-size: 24px;   
 }
+
 /*controls the color and text of the NavBar text*/
 a{
     color: white;
     text-decoration:none;
     font-family: fantasy;
 }
-/**/
-a:hover{
-    background-color: red;
-    transition:.5s ease bottom;
 
-}
-.banner{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    max-height: 100px;
-    width: 100%;
-
-}
-.aboutpic{
-    display: flex;
-}
-
-
+/*sets style of the name in the banner*/
 header h2{
     margin-top: 20px;
-    width: fit-content;
     color: white;
     margin-left: 10px;
     font-family: fantasy;
     font-size: 36px;
-
 }
 
+/*Hides the 3 buttons until the media query*/
 header figure{
     display: none;
 }
 
+/*gives a background hover over on the NavBar*/
+a:hover{
+    background-color: red;
+    transition: all 1s ease-in;
+}
+
+/*space banner sizing*/
+.banner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 100px;
+    width: 100%;
+}
+
+/*hidden titles for the containers that appear in media querry*/
 h5{
     display: none;
 }
 
+/*creates a 2x3 grid that is the skeleton of the body*/
 .gridcontainer{
     display: grid;
     grid-template-columns:30% 70%;
-    grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
-    
+    grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);  
 }
+
+/* Controls the Left collumn of the grid*/
 .containerL{
-    justify-content: left;
-    margin-left: 20px;
+    margin-left: 10%;
     margin-right: 10px;
     text-align: end;
-    flex: 1 1 ;
     color: white;
     border-right: 5px solid red;
     background-color: rgb(24, 22, 22);
@@ -88,23 +89,9 @@ h5{
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: auto
    }
-
-.containerL-1{
-    min-width: 50px;
-    min-height: 60px;
-    margin-bottom: auto;
-}
-.containerL-2{
-    min-width: 50px;
-    min-height: 60px;
-    margin-bottom: auto;
-}
-.containerL-3{
-    min-width: 50px;
-    min-height: 60px;
-    margin-bottom: auto;
-}
+/*controls the right content containers*/
 .containerR{
     display: flex;
     flex-wrap: wrap;
@@ -113,10 +100,14 @@ h5{
     color: white;
 }
 .containerR-1{
-    display: flex;
+    flex-wrap: nowrap;
     min-width: 50px;
     min-height: 100px;
     margin-bottom: 20px;
+}
+
+.aboutpic{
+    
 }
 .containerR-2{
 
@@ -130,6 +121,7 @@ h5{
     display: flex;
     min-width: 50px;
     min-height: 100px;
+    align-items: center;
 
 }
 .propic1{
@@ -175,6 +167,12 @@ footer h4{
     color: white;
     text-align:center;
 
+}
+h6{
+    background-color: rgb(24, 22, 22);
+    font-size: 30px;
+    text-decoration: underline;
+ 
 }
 @media screen and (max-width:768px){
     
@@ -230,6 +228,7 @@ footer h4{
         padding: 0px 10px 0px 10px;
         width: 90%;
         min-height: 100px;
+        flex-wrap: wrap;
       
     }
     .containerR-2{
