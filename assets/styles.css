@@ -1,50 +1,54 @@
+/*Universal Code, setting background color*/
 * {
-    box-sizing: content-box;
     padding: 0;
     margin: 0;
     background-color: black;
 }
-
-header{
-    margin: 0px;
-    padding: 0px;
+/* Sets the scrolling behavior*/
+html{
+    scroll-behavior: smooth;
 }
+
+/*positions the navigation bar*/
 nav{
-   
     float: right;
     margin-top: -20px;
     margin-right: 20px;
 }
+/*removes styles for the ul*/
 nav ul{
- 
     list-style-type: none;
 }
-
+/*positions the terms inside of the navigation bar*/
 nav li{
- 
     margin-left: 25px ;
     display: inline-block;
     font-size: 24px;   
 }
-
+/*controls the color and text of the NavBar text*/
 a{
     color: white;
     text-decoration:none;
     font-family: fantasy;
 }
+/**/
 a:hover{
     background-color: red;
-    transition-property: width;
-    transition-timing-function: ease-in-out;
+    transition:.5s ease bottom;
 
 }
 .banner{
     margin-top: 20px;
     margin-bottom: 20px;
-    display:flex;
+    display: flex;
     max-height: 100px;
     width: 100%;
+
 }
+.aboutpic{
+    display: flex;
+}
+
 
 header h2{
     margin-top: 20px;
@@ -104,42 +108,51 @@ h5{
 .containerR{
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-bottom: 10px;
+    justify-content: space-evenly;
     background-color: rgb(24, 22, 22);
     color: white;
 }
 .containerR-1{
+    display: flex;
     min-width: 50px;
     min-height: 100px;
     margin-bottom: 20px;
 }
 .containerR-2{
-    min-width: 50px;
+
     min-height: 100px;
+    margin-bottom: 20px;
+    padding-top: 20px;
     justify-content: center;
-    align-content: space-around;
+
 }
 .containerR-3{
+    display: flex;
     min-width: 50px;
     min-height: 100px;
 
 }
 .propic1{
-
+    display: flex;
     width: 100%;
+    justify-content: space-evenly;
+    box-sizing:content-box;
+    align-self: center; 
+    height: auto;
     opacity: .5;
    }
+
 .propic1:hover{
     visibility: 100%;
     opacity: 1;
 }
 .propic2{
-
-    width: 50%;
-    
+    justify-content: center;  
+    align-self: center; 
+    margin: 10px;
+    width: 300px;
+    height: 200px; 
+    transform: rotate(.1deg); /* BECAUSE FOR SOME REASON THERE NEEDS TO BE A TILT */ 
 }
 
 
@@ -153,6 +166,7 @@ footer{
     max-width: 20px;
     margin-top: 20px;
     margin-left: 10px;
+
 }
 
 footer h4{
@@ -231,6 +245,11 @@ footer h4{
         min-height: 100px;
     }
 
+    .propic2{ 
+        margin: none;  
+        width: 400px;
+        height: 200px;  
+    }
 }
 
     
