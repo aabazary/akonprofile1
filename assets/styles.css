@@ -6,38 +6,38 @@
 }
 
 /* Sets the scrolling behavior*/
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /*positions the navigation bar*/
-nav{
+nav {
     float: right;
     margin-top: -20px;
     margin-right: 20px;
 }
 
 /*removes styles for the ul*/
-nav ul{
+nav ul {
     list-style-type: none;
 }
 
 /*positions the terms inside of the navigation bar*/
-nav li{
-    margin-left: 25px ;
+nav li {
+    margin-left: 25px;
     display: inline-block;
-    font-size: 24px;   
+    font-size: 24px;
 }
 
 /*controls the color and text of the NavBar text*/
-a{
+a {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
     font-family: fantasy;
 }
 
 /*sets style of the name in the banner*/
-header h2{
+header h2 {
     margin-top: 20px;
     color: white;
     margin-left: 10px;
@@ -46,18 +46,18 @@ header h2{
 }
 
 /*Hides the 3 buttons until the media query*/
-header figure{
+header figure {
     display: none;
 }
 
 /*gives a background hover over on the NavBar*/
-a:hover{
+a:hover {
     background-color: red;
-    transition: all 1s ease-in;
+    transition: all .5s ease-in;
 }
 
 /*space banner sizing*/
-.banner{
+.banner {
     margin-top: 20px;
     margin-bottom: 20px;
     max-height: 100px;
@@ -65,19 +65,19 @@ a:hover{
 }
 
 /*hidden titles for the containers that appear in media querry*/
-h5{
+h5 {
     display: none;
 }
 
 /*creates a 2x3 grid that is the skeleton of the body*/
-.gridcontainer{
+.gridcontainer {
     display: grid;
-    grid-template-columns:30% 70%;
-    grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);  
+    grid-template-columns: 30% 70%;
+    grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
 }
 
 /* Controls the Left collumn of the grid*/
-.containerL{
+.containerL {
     margin-left: 10%;
     margin-right: 10px;
     text-align: end;
@@ -90,70 +90,96 @@ h5{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: auto
-   }
+}
+
 /*controls the right content containers*/
-.containerR{
+.containerR {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(24, 22, 22);
     color: white;
 }
-.containerR-1{
+
+/*controls the about me right container, structuring the contents in the box */
+.containerR-1 {
+
     flex-wrap: nowrap;
     min-width: 50px;
     min-height: 100px;
     margin-bottom: 20px;
 }
 
-.aboutpic{
-    
+/*controls the text in about me*/
+p {
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgb(24, 22, 22);
 }
-.containerR-2{
 
+/*controls the porfolio right container, structuring the contents in the box */
+.containerR-2 {
     min-height: 100px;
     margin-bottom: 20px;
     padding-top: 20px;
-    justify-content: center;
+    border: 20px;
 
 }
-.containerR-3{
+
+/*controls the contact me right container, structuring the contents in the box */
+.containerR-3 {
     display: flex;
     min-width: 50px;
     min-height: 100px;
     align-items: center;
-
 }
-.propic1{
+
+/* controls the  large picture in the portfolio section*/
+.propic1 {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
-    box-sizing:content-box;
-    align-self: center; 
+    padding: 2%;
+    box-sizing: content-box;
+    justify-self: center;
     height: auto;
     opacity: .5;
-   }
+}
 
-.propic1:hover{
+/*maximizes opacity on large profile picture as a hover effect*/
+.propic1:hover {
     visibility: 100%;
     opacity: 1;
 }
-.propic2{
-    justify-content: center;  
-    align-self: center; 
+
+/* controls aspects of the smaller pictures*/
+.propic2 {
+    justify-content: center;
+    align-self: center;
     margin: 10px;
     width: 300px;
-    height: 200px; 
-    transform: rotate(.1deg); /* BECAUSE FOR SOME REASON THERE NEEDS TO BE A TILT */ 
+    height: 200px;
+    transform: rotate(1deg);
+    /* BECAUSE FOR SOME REASON THERE NEEDS TO BE A TILT */
+
 }
 
+/*sets text for the h6 which is the contact me text*/
+h6 {
+    background-color: rgb(24, 22, 22);
+    font-size: 30px;
+    text-decoration: underline;
 
-footer{
+}
+
+/*sets footer element to flex and centers the text*/
+footer {
     display: flex;
     justify-content: center;
 
 }
-.imgpara{
+
+/*puts small image of my logo that brings you back to the top of the page*/
+.imgpara {
     max-height: 20px;
     max-width: 20px;
     margin-top: 20px;
@@ -161,94 +187,89 @@ footer{
 
 }
 
-footer h4{
+/*text alignment for the h4 footer tag*/
+footer h4 {
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
-    text-align:center;
-
+    text-align: center;
 }
-h6{
-    background-color: rgb(24, 22, 22);
-    font-size: 30px;
-    text-decoration: underline;
- 
-}
-@media screen and (max-width:768px){
-    
-    header h2{
-    display:none;}
-    
-    header figure{
-    display: flex;
- 
-    }
-    
-    .gridcontainer{
-        grid-template-columns: 100%;
-        grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
-        
-    }
-    header nav{
+/*sets media querry for a mobile view*/
+@media screen and (max-width:768px) {
+/*hides the original header h2*/
+    header h2 {
         display: none;
     }
-    .buttlinks{
+
+    .gridcontainer {
+        grid-template-columns: 100%;
+        grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
+
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .buttlinks {
         display: flex;
         flex-direction: row;
         align-self: center;
-       
-     
+
+
     }
-    .imgbutt{
+
+    .imgbutt {
         display: flex;
         width: 90%;
         margin: 10px;
     }
-    
-    .containerL{
+
+    .containerL {
         display: none;
     }
-    .containerR{
-        justify-self: center;     
+
+    .containerR {
+        justify-self: center;
         background-color: rgb(24, 22, 22);
     }
-    
-    h5{
+
+    h5 {
         display: flex;
         justify-content: center;
         color: white;
         text-align: center;
         font-size: 32px;
         font-family: fantasy;
-    
-    }   
 
-    .containerR-1{
-        margin:10px;
+    }
+
+    .containerR-1 {
+        margin: 10px;
         padding: 0px 10px 0px 10px;
         width: 90%;
         min-height: 100px;
         flex-wrap: wrap;
-      
+
     }
-    .containerR-2{
-        margin:10px;
-        padding: 0px 10px 0px 10px;
-        width: 90%;
-        min-height: 100px;
-    }
-    .containerR-3{
-        margin:10px;
+
+    .containerR-2 {
+        margin: 10px;
         padding: 0px 10px 0px 10px;
         width: 90%;
         min-height: 100px;
     }
 
-    .propic2{ 
-        margin: none;  
+    .containerR-3 {
+        margin: 10px;
+        padding: 0px 10px 0px 10px;
+        width: 90%;
+        min-height: 100px;
+    }
+
+    .propic2 {
+        margin: none;
         width: 400px;
-        height: 200px;  
+        height: 200px;
     }
 }
-
-    
