@@ -125,7 +125,7 @@ p {
     border: 20px;
 
 }
-
+/* controls the small images in the portfolio and the hover affect for it*/
 .containerR-2 a {
     margin: 20px;
     opacity: .5;
@@ -158,12 +158,9 @@ p {
 
 /* controls aspects of the smaller pictures*/
 .propic2 {
-    
     margin: 10px;
     width: auto;
-    height: 300px;
-    transform: rotate(10deg);
-    
+    height: 300px;  
 }
 
 /*sets text for the h6 which is the contact me text*/
