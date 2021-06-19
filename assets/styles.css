@@ -97,6 +97,7 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: center;
     background-color: rgb(24, 22, 22);
     color: white;
 }
@@ -119,13 +120,20 @@ p {
 
 /*controls the porfolio right container, structuring the contents in the box */
 .containerR-2 {
-    min-height: 100px;
     margin-bottom: 20px;
     padding-top: 20px;
     border: 20px;
 
 }
 
+.containerR-2 a {
+    margin: 20px;
+    opacity: .5;
+    background-color: rgb(24, 22, 22)
+}
+.containerR-2 a:hover{
+    opacity: 1;
+}
 /*controls the contact me right container, structuring the contents in the box */
 .containerR-3 {
     display: flex;
@@ -136,12 +144,9 @@ p {
 
 /* controls the  large picture in the portfolio section*/
 .propic1 {
-    display: flex;
     width: 100%;
     padding: 2%;
-    box-sizing: content-box;
-    justify-self: center;
-    height: auto;
+    height: 600px;
     opacity: .5;
 }
 
@@ -153,14 +158,12 @@ p {
 
 /* controls aspects of the smaller pictures*/
 .propic2 {
-    justify-content: center;
-    align-self: center;
+    
     margin: 10px;
-    width: 300px;
-    height: 200px;
-    transform: rotate(1deg);
-    /* BECAUSE FOR SOME REASON THERE NEEDS TO BE A TILT */
-
+    width: auto;
+    height: 300px;
+    transform: rotate(10deg);
+    
 }
 
 /*sets text for the h6 which is the contact me text*/
@@ -194,46 +197,51 @@ footer h4 {
     color: white;
     text-align: center;
 }
+
 /*sets media querry for a mobile view*/
 @media screen and (max-width:768px) {
-/*hides the original header h2*/
+
+    /*hides the original header h2*/
     header h2 {
         display: none;
     }
 
+    /* makes the body into columns*/
     .gridcontainer {
         grid-template-columns: 100%;
-        grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
-
     }
 
+    /*removes the navbar*/
     header nav {
         display: none;
     }
 
+    /*gives structure to the 3 buttons that replaced the navBar*/
     .buttlinks {
         display: flex;
         flex-direction: row;
         align-self: center;
-
-
     }
 
+    /*controls the margins and size of the 3 buttons*/
     .imgbutt {
-        display: flex;
         width: 90%;
         margin: 10px;
     }
 
+    /*removes the left container*/
     .containerL {
         display: none;
     }
 
+    /*gives background and structure to the visible container*/
     .containerR {
         justify-self: center;
         background-color: rgb(24, 22, 22);
+        align-content: center;
     }
 
+    /*controls the labels of the containers*/
     h5 {
         display: flex;
         justify-content: center;
@@ -241,25 +249,27 @@ footer h4 {
         text-align: center;
         font-size: 32px;
         font-family: fantasy;
-
     }
 
+    /*structure of the first container*/
     .containerR-1 {
         margin: 10px;
         padding: 0px 10px 0px 10px;
         width: 90%;
         min-height: 100px;
         flex-wrap: wrap;
-
     }
 
+    /*structure of the portfolio container*/
     .containerR-2 {
+        justify-content: space-evenly;
         margin: 10px;
-        padding: 0px 10px 0px 10px;
+        padding: 0px 10px 10px 10px;
         width: 90%;
-        min-height: 100px;
+        height: 100%;
     }
 
+    /*structure of contact me container*/
     .containerR-3 {
         margin: 10px;
         padding: 0px 10px 0px 10px;
@@ -267,9 +277,14 @@ footer h4 {
         min-height: 100px;
     }
 
+    .propic1   {
+        height: 500px;
+        width: auto;
+
+    }
+    /*structure of the small p*/
     .propic2 {
-        margin: none;
-        width: 400px;
-        height: 200px;
+        width:250px;
+        height: 250px;
     }
 }
