@@ -5,5 +5,4 @@ Clicking the eye in the footer will reload the page.
 
 https://aabazary.github.io/akonprofile1/
 
-
 ![](assets\images\ScreenShot.png)
