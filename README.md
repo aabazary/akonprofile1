@@ -4,3 +4,4 @@ This is only using CSS and HTML, so a very basic profile page, The links have a 
 Clicking the eye in the footer will reload the page.
 
 https://aabazary.github.io/akonprofile1/
+![ScreenShot](assets\images\ScreenShot.png)
